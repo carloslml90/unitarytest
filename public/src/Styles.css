@@ -1,0 +1,14 @@
+html, body {
+
+    background-color: black;
+}
+
+h1, h2, p {color: rosybrown; font-family: 'Times New Roman', Times, serif; font-size: 5em; text-align: center;}
+
+button {
+
+   width: 8em;
+   height: 8em;
+   border-radius: 5em; 
+}
+
