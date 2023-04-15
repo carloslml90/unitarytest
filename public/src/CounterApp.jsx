@@ -1,17 +1,18 @@
 
 import { useState } from "react";
-import ProtoType from "prop-types";
+import PropTypes from "prop-types";
 
 
 
 
-export function CounterApp({value}) {
+ export const CounterApp=({value}) =>{
     
     const [counter,setCounter]=useState(value);
 
     const HandleAdd=()  =>  {
         setCounter((c) => c + 10)
     };
+
     const HandleLess=()  =>  {
         setCounter((c) => c - 10)
     };
@@ -22,7 +23,7 @@ export function CounterApp({value}) {
 
 return (
 <>
-    <h1>Counter App</h1>
+    <h1>CounterApp</h1>
     <h2>{counter}</h2>
 
     <center>
@@ -35,8 +36,8 @@ return (
 
 }
 
-CounterApp.protoType={
+CounterApp.propTypes={
 
-    value: ProtoType.number,
+    value: PropTypes.number,
 }
 
